@@ -15,8 +15,8 @@ datasource db {
 
 model Anime {
   id Int @id @default(autoincrement())
-  title String 
-  description String?
+  title String
+  description String
   episodes Int
   releaseYear Int
   studio String
@@ -29,3 +29,17 @@ model Anime {
 
   @@map("animes")
 }
+
+ model Personagem {
+   id         Int     @id @default(autoincrement())
+  name        String  
+  description String
+  age         Int
+  power       Boolean
+  anime       String
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("personagens")
+ }

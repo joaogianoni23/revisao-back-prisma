@@ -2,7 +2,7 @@
 CREATE TABLE "animes" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
-    "description" TEXT,
+    "description" TEXT NOT NULL,
     "episodes" INTEGER NOT NULL,
     "releaseYear" INTEGER NOT NULL,
     "studio" TEXT NOT NULL,
